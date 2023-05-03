@@ -24,9 +24,20 @@ body{
 .flex {
     display: flex;
 }
+/* containers */
 .container {
     width: 1100px;
     margin: 0 auto;
+}
+.big-container {
+    width: 1300px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.footer-container {
+    width: 1300px;
+    margin: 0 auto;
+    align-items: center;
 }
 /* btn */
 .blue-btn {
@@ -80,11 +91,6 @@ header {
 
     /* TODO to remove */
     height: 700px;
-}
-.jumbotron-container {
-    width: 1300px;
-    margin: 0 auto;
-    flex-direction: column;
 }
 .main-title {
     padding-bottom: 30px;
@@ -190,4 +196,37 @@ h2 {
 
     /* todo remove */
     height: 300px;
+}
+
+
+/* FAQs */
+
+.faq {
+    width: 100%;
+    
+
+    /* todo remove */
+    height: 200px;
+    border: var(--bb);
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: black;
+    color: white;
+
+
+    /* todo remove */
+    height: 400px;
+}
+.footer-info {
+    align-self: center;
+
+    /* todo remove */
+    height: 200px;
+    width: calc(100% / 5);
+    border: 1px dashed white;
 }

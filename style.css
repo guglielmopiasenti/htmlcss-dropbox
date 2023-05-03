@@ -4,3 +4,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* CUSTOM PROPERTIES */
+
+:root {
+    --btn-blue: #3961FF;
+    --bg-blue: #B4D0E7;
+}
+
+
+
+/* UTILS */
+
+.blue-btn {
+    background-color: var(--btn-blue);
+    padding: 10px;
+}
+
+
+
+
+
+
+
+/* Main Css */
+header {
+    height: 50px;
+
+
+
+    border: 1px dashed black;
+}

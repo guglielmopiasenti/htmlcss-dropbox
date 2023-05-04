@@ -45,7 +45,6 @@ body{
 }
 .box-container {
     gap: 40px;
-    
 }
 .footer-container {
     width: 1300px;
@@ -239,25 +238,28 @@ h2 {
 
 /* Squares */
 
+#title-business-section {
+    padding: 100px 0 30px ;
+}
+
 .row {
-    width: calc(100% / 3);
-    gap: 20px;
     flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
+    margin: 0 -10px;
 }
 .col {
+    width: calc(100% / 3);
     flex-direction: column;
-    /* todo remove */
-    /* height: 300px; */
-    border: var(--bb);
-    /* width: calc(100% / 3); */
-
+    padding: 10px;
 }
-.gallery-img {
+.card-img {
     height: auto;
     width: 300px;
-
+}
+.card > h3 {
+    padding-bottom: 20px;
+}
+.business-teams{
+    padding: 200px 0 50px;
 }
 
 /* Clients */
@@ -279,6 +281,10 @@ h2 {
     border: var(--bb);
     background-color: green;
 }
+.clients > img {
+    width: 200px;
+    height: auto;
+}
 .main-client {
     
     width: calc(100% / 3);
@@ -291,7 +297,8 @@ h2 {
 }
 .trial-container {
     background-color: #B4D0E8;
-
+    width: 1000;
+    margin: 0 auto;
 
     /* todo remove */
     height: 300px;

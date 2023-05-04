@@ -27,13 +27,12 @@ body{
 }
 /* containers */
 .container {
-    width: 1100px;
+    width: 1000px;
     margin: 0 auto;
 }
 .big-container {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
-    flex-direction: column;
 }
 .footer-container {
     width: 1300px;
@@ -46,6 +45,7 @@ body{
     padding: 5px 10px;
     color: white; 
     text-decoration: none; 
+    width: fit-content;
 }
 .white-btn {
     background-color: white;
@@ -53,6 +53,13 @@ body{
     color: black;
 }
 
+
+p {
+
+    /* TODO to remove */
+   
+    border: var(--bb);
+}
 
 
 
@@ -71,7 +78,7 @@ header {
 .left-side-nav, .right-side-nav {
     align-items: center;
     padding: 10px;
-    gap: 20px;
+    gap: 30px;
 }
 .left-side-nav img {
     width: 100px;
@@ -93,28 +100,41 @@ header {
 .jumbotron {
     padding-top: 150px;
     background-color: var(--bg-blue);
+    
 
     /* TODO to remove */
-    height: 700px;
+    /* height: 700px; */
 }
 .main-title {
-    padding-bottom: 30px;
-
-    /* TODO to remove */
-    height: 100px;
-    width: 1000px;
-    border: var(--bb);
+    font-size: 60px;
+    padding-bottom: 20px;
+    width: 70%;
 }
-p {
-
-    /* TODO to remove */
-    height: 100px;
-    width: 200px;
-    border: var(--bb);
+.jumbo-box {
+    position: relative;
+    flex-direction: column;
+}
+.jumbo-p {
+    width: 30%;
+    height: fit-content;
+    padding: 20px 0;
+    right: 0;
+    bottom: 0;
+    
 }
 .preview-img {
+    width: 630px;
+    height: auto;
+    position: absolute;
+    right: 200px;
+    top: 20px;
 
-
+}
+.jumbo-box > div {
+    padding: 30px 0;
+}
+.jumbo-box > i {
+    padding: 30px 0;
 }
 
 

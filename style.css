@@ -15,14 +15,23 @@
 }
 
 
-
-/** UTILS */
-
+/* Generics */
 body{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     font-weight: lighter;
 }
+img {
+    max-width: 100%;
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+
+
+/** UTILS */
+
 .flex {
     display: flex;
 }
@@ -31,9 +40,9 @@ body{
     color: black;
    
 }
-.padding-l {
-    padding-top: 100px;
-}
+
+
+
 /* containers */
 .container {
     width: 1000px;
@@ -51,6 +60,7 @@ body{
     margin: 0 auto;
     align-items: center;
 }
+
 /* btn */
 .blue-btn {
     background-color: var(--btn-blue);
@@ -58,6 +68,7 @@ body{
     color: white; 
     text-decoration: none; 
     width: fit-content;
+    display: inline-block;
 }
 .blue-btn-large {
     color: white; 
@@ -66,33 +77,57 @@ body{
     width: 100%;
     text-decoration: none; 
     text-align: center;
+    display: inline-block;
 }
 .white-btn {
     background-color: white;
     padding: 5px 10px;
     color: black;
+    height: fit-content;
+    text-decoration: none;
+    display: inline-block;
 }
 .white-btn-bb {
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px;
     color: black;
     border: 1px solid black;
     text-decoration: none;
+    display: inline-block;
 }
+
 /* colors */
 .grey {
     color: gray;
     padding-bottom: 10px;
 }
 
-p {
-
-    /* TODO to remove */
-   
-    border: var(--bb);
+/* Layouts */
+.row {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-
+.col-30 {
+    flex-basis: 30%;
+}
+.col-50 {
+    flex-basis: 50%
+}
+.col-70 {
+    flex-basis: 70%;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}
+.padding-top-xl {
+    padding-top: 200px;
+}
+.padding-b {
+    padding-bottom: 50px;
+}
 
 /** Main CSS */
 
@@ -102,8 +137,9 @@ header {
     background-color: white;
     height: 60px;
     padding: 20px;
-    position: fixed;
-    width: 100vw;
+    position: sticky;
+    top: 0;
+    right: 0;
     justify-content: space-between;
     z-index: 1;
 }
@@ -121,52 +157,32 @@ header {
 
 /* Jumbotron Section */
 
-.jumbotron {
-    padding-top: 150px;
+#jumbotron {
     background-color: var(--bg-blue);
-}
-.main-title {
-    font-size: 60px;
-    padding-bottom: 20px;
-    width: 70%;
-}
-.jumbo-box {
-    position: relative;
-    flex-direction: column;
-}
-.jumbo-p {
-    width: 30%;
-    height: fit-content;
-    padding: 20px 0;
-    right: 0;
-    bottom: 0;
-    
-}
-.preview-img {
-    width: 630px;
-    height: auto;
-    position: absolute;
-    right: 200px;
-    top: 20px;
 
 }
-.jumbo-box > div {
-    padding: 30px 0;
+h1 {
+    font-size: 78px;
+    font-weight: 800;
+    margin-bottom: 50px;
 }
-.jumbo-box > i {
-    padding: 30px 0;
+#jumbotron .big-container {
+    position: relative;
+    top: 100px;
 }
+.col-30 > i {
+    padding-top: 20px;
+}
+
 
 
 /* Main Body */
 
 main {
     background-color: white;
-    padding: 150px 0;
 }
 h2 {
     font-size: 30px;
-    padding-bottom: 50px;
 }
 .payment-container {
     height: 25px;
@@ -229,12 +245,19 @@ h2 {
 }
 
 
-.img {
-    width: 50%;
-    height: auto;
+.box-content {
+    width: 40%;
+    padding-left: 20px;
+    padding-top: 50px;
     
 }
-
+.box-content > h2 {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.box-content > p {
+    padding-bottom: 30px;
+}
 
 /* Squares */
 
@@ -242,10 +265,6 @@ h2 {
     padding: 100px 0 30px ;
 }
 
-.row {
-    flex-wrap: wrap;
-    margin: 0 -10px;
-}
 .col {
     width: calc(100% / 3);
     flex-direction: column;
@@ -288,32 +307,35 @@ h2 {
 .main-client {
     
     width: calc(100% / 3);
+    background-color: lightgray;
 
 
     /* todo remove */
     height: 300px;
-    background-color: aqua;
-    border: var(--bb);
+    
 }
 .trial-container {
     background-color: #B4D0E8;
     width: 1000;
     margin: 0 auto;
-
-    /* todo remove */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     height: 300px;
 }
-
+.title-trial {
+    width: 50%;
+    padding: 0
+}
 
 /* FAQs */
 
 .faq {
+    padding: 100px 0;
+}
+.faq-table {
     width: 100%;
-    
-
-    /* todo remove */
     height: 200px;
-    border: var(--bb);
 }
 
 
@@ -330,9 +352,13 @@ footer {
 }
 .footer-info {
     align-self: center;
-
-    /* todo remove */
-    height: 200px;
     width: calc(100% / 5);
-    border: 1px dashed white;
+    
+}
+.footer-info > h3 {
+    padding-bottom: 20px;
+}
+.footer-info > ul {
+    list-style: none;
+    line-height: 2rem;
 }

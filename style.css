@@ -102,6 +102,33 @@ a {
     padding-bottom: 10px;
 }
 
+/* bg colors */
+.bg-green {
+    background-color: #A2D39B;
+}
+.bg-purple {
+    background-color: #61072B;
+}
+.bg-blue1 {
+    background-color: #3893CE;
+}
+.bg-blue2 {
+    background-color: #172481;
+}
+.bg-red1 {
+    background-color: #F41C1E;
+}
+.bg-red2 {
+    background-color: #D5001F;
+}
+.bg-azure {
+    background-color: #B4D0E7;
+}
+.bg-yellow {
+    background-color: #F9D82F;
+}
+
+
 /* Layouts */
 .row {
     display: flex;
@@ -127,6 +154,9 @@ a {
 }
 .padding-b {
     padding-bottom: 50px;
+}
+.padding {
+    padding: 50px;
 }
 
 /** Main CSS */
@@ -283,37 +313,35 @@ h2 {
 
 /* Clients */
 
-.clients-container {
-    
 
-    /* todo remove */
-    height: 300px;
-    border: var(--bb);
+#clients .squares {
+    display: flex;
 }
-.clients {
-    width: calc(100% / 3);
-    
-    
-    /* todo remove */
-    
-    height: 300px;
-    border: var(--bb);
-    background-color: green;
+#clients .square {
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
+    display: flex;
+    flex-wrap: wrap;
 }
-.clients > img {
-    width: 200px;
-    height: auto;
+.square > .square-small {
+    flex-basis: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 15px solid transparent;
 }
-.main-client {
-    
-    width: calc(100% / 3);
-    background-color: lightgray;
+#clients img {
+    width: 50%;
+}
+.client-img {
+    filter: invert(1);
 
-
-    /* todo remove */
-    height: 300px;
-    
 }
+.square-small:hover {
+    border: 15px solid rgba(255, 255, 255, 0.5);
+}
+
 .trial-container {
     background-color: #B4D0E8;
     width: 1000;

@@ -25,7 +25,7 @@ img {
     max-width: 100%;
     display: block;
 }
-a {
+.no-decor {
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ a {
 .blue-btn-large {
     color: white; 
     background-color: var(--btn-blue);
-    padding: 10px 0;
+    padding: 10px 30px;
     width: 100%;
     text-decoration: none; 
     text-align: center;
@@ -137,8 +137,14 @@ a {
 .col-30 {
     flex-basis: 30%;
 }
+.col-40 {
+    flex-basis: 40%;
+}
 .col-50 {
     flex-basis: 50%
+}
+.col-60 {
+    flex-basis: 60%;
 }
 .col-70 {
     flex-basis: 70%;
@@ -152,11 +158,29 @@ a {
 .padding-top-xl {
     padding-top: 200px;
 }
+.padding-top {
+    padding-top: 50px;
+}
+.padding-b-xs {
+padding-bottom: 10px;
+}
+.padding-b-s {
+    padding-bottom: 20px;
+}
 .padding-b {
     padding-bottom: 50px;
 }
+.padding-b-l {
+    padding-bottom: 100px;
+}
+.padding-b-xl {
+    padding-bottom: 150px;
+}
 .padding {
     padding: 50px;
+}
+.padding-l {
+    padding: 100px 0;
 }
 
 /** Main CSS */
@@ -244,10 +268,6 @@ h2 {
     width: 100%;
     border: var(--sg);
     margin-top: 40px;
-    
-
-    /* todo remove */
-    height: 300px;
 }
 .box-upper {
     border-bottom: var(--sg);
@@ -270,8 +290,8 @@ h2 {
 }
 .box-main-horizontal {
     justify-content: space-between;
-    align-items: center;
     padding: 30px 20px;
+    
 }
 
 
@@ -344,22 +364,23 @@ h2 {
 
 .trial-container {
     background-color: #B4D0E8;
-    width: 1000;
-    margin: 0 auto;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    height: 300px;
+    
+
+}
+.trial {
+    justify-content: space-between;
 }
 .title-trial {
-    width: 50%;
-    padding: 0
+    width: 40%;
+    color: #61072B;
+    
 }
+
 
 /* FAQs */
 
-.faq {
-    padding: 100px 0;
+#faq {
+    
 }
 .faq-table {
     width: 100%;

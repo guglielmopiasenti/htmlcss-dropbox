@@ -81,7 +81,7 @@ img {
 }
 .white-btn {
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 40px;
     color: black;
     height: fit-content;
     text-decoration: none;
@@ -205,6 +205,12 @@ img {
 }
 .padding-l {
     padding: 100px 0;
+}
+.padding-xl {
+    padding: 150px 0;
+}
+.padding-r-40 {
+    padding-right: 40px;
 }
 
 /** Main CSS */
@@ -374,6 +380,7 @@ li > h3 {
     width: 300px;
 }
 .card > h3 {
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .business-teams{
@@ -411,17 +418,20 @@ li > h3 {
     border: 15px solid rgba(255, 255, 255, 0.5);
 }
 
+/* trial section */
 .trial-container {
     background-color: #B4D0E8;
-    
-
 }
 .trial {
     justify-content: space-between;
+    align-items: baseline;
 }
 .title-trial {
-    width: 40%;
+    width: 50%;
     color: #61072B;
+}
+.title-trial > h2 {
+    font-size: 40px;
 }
 
 
@@ -442,7 +452,7 @@ td {
 }
 .hidden {
     display: none;
-    padding-right: 40px;
+    
 }
 .faq-table tr:hover + tr.hidden {
     display: block;

@@ -99,7 +99,6 @@ img {
 /* colors */
 .grey {
     color: gray;
-    padding-bottom: 10px;
 }
 .grey-line-up {
     border-top: 1px solid grey;
@@ -158,6 +157,9 @@ img {
 }
 .col-70 {
     flex-basis: 70%;
+}
+.ml-20m {
+    margin-left: -20px;
 }
 .ml-40m {
     margin-left: -40px;
@@ -333,7 +335,7 @@ h2 {
 .fa-ul > li {
     margin-left: -15px;
 }
-.fa-ul > h3 {
+li > h3 {
     padding-bottom: 10px;
     font-size: 20px;
 }
@@ -483,9 +485,6 @@ footer {
     
 }
 
-ul > h3 {
-    padding-bottom: 20px;
-}
 .footer-info > ul {
     list-style: none;
     line-height: 2rem;

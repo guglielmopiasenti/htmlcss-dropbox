@@ -53,7 +53,7 @@ img {
     margin: 0 auto;
 }
 .box-container {
-    gap: 40px;
+    gap: 60px;
 }
 .footer-container {
     width: 1300px;
@@ -180,10 +180,13 @@ img {
     padding-top: 50px;
 }
 .padding-b-xs {
-padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 .padding-b-s {
     padding-bottom: 20px;
+}
+.padding-b-30 {
+    padding-bottom: 30px;
 }
 .padding-b {
     padding-bottom: 50px;
@@ -197,6 +200,9 @@ padding-bottom: 10px;
 .padding {
     padding: 50px;
 }
+.padding-s {
+    padding: 10px;
+}
 .padding-l {
     padding: 100px 0;
 }
@@ -207,8 +213,7 @@ padding-bottom: 10px;
 
 header {
     background-color: white;
-    height: 60px;
-    padding: 20px;
+    padding: 0 20px;
     position: sticky;
     top: 0;
     right: 0;
@@ -232,7 +237,7 @@ header {
     padding: 10px 0;
     margin: 0 10px;
     position: relative;
-  }
+}
 
 .nav-content::after {
     content: "";
@@ -244,18 +249,17 @@ header {
     background-color: dodgerblue;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
-  }
+}
   /* Styles for the line when hovered */
 .nav-content:hover::after {
     transform: scaleX(1);
-  }
+}
 
 
 /* Jumbotron Section */
 
 #jumbotron {
     background-color: var(--bg-blue);
-
 }
 h1 {
     font-size: 78px;
@@ -284,7 +288,6 @@ h2 {
     height: 25px;
     gap: 20px;
     align-items: center;
-    padding-bottom: 50px;
 }
 .payment-container > div {
     gap: 5px;
@@ -350,16 +353,9 @@ li > h3 {
 
 .box-content {
     width: 40%;
-    padding-left: 20px;
-    padding-top: 50px;
-    
 }
 .box-content > h2 {
     font-size: 25px;
-    padding-bottom: 20px;
-}
-.box-content > p {
-    padding-bottom: 30px;
 }
 
 /* Squares */
@@ -426,7 +422,6 @@ li > h3 {
 .title-trial {
     width: 40%;
     color: #61072B;
-    
 }
 
 
@@ -434,7 +429,6 @@ li > h3 {
 
 .faq-table {
     width: 100%;
-    /* height: 200px; */
     border-collapse: collapse;
 }
 td > i {
@@ -455,8 +449,7 @@ td {
 }
 .faq-table tr:hover .fa-angle-down {
     display: none;
-}
-  
+} 
 .faq-table tr:hover .fa-angle-up {
     display: inline-block;
 }
@@ -467,9 +460,6 @@ footer {
     background-color: black;
     color: white;
     padding: 50px 0;
-
-    /* todo remove */
-    
 }
 .footer-container {
     flex-wrap: wrap;
@@ -484,7 +474,6 @@ footer {
     padding-bottom: 100px;
     
 }
-
 .footer-info > ul {
     list-style: none;
     line-height: 2rem;
@@ -498,8 +487,6 @@ footer {
     position: relative;
     left: 50px;
     padding-bottom: 50px;
-    
-    
 }
 .language {
     padding-left: 50px;
